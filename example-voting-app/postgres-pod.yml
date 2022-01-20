@@ -9,6 +9,9 @@ spec:
   containers:
   - name: postgres
     image: postgres:9.4
+    env:
+      - name: POSTGRES_PASSWORD
+        value: "1234"
     resources:
       limits:
         memory: "128Mi"
